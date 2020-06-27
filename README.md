@@ -1,2 +1,2 @@
 # Distributed-Computing-Course
-Some files from Distributed Computing Course in HSE University
+Some files from Distributed Computing Course at HSE University
