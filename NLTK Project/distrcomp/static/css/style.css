@@ -1,0 +1,51 @@
+body{
+  background-color: #ffffff;
+  font-family: Arial;
+  margin: 0;
+}
+
+.header {
+  padding: 20px;
+  text-align: center;
+  background: #00c322;
+  color: white;
+  font-size: 20px;
+}
+
+.content {
+  padding: 20px;
+  color: black;
+  width: 60%;
+  margin:0 auto;
+  text-align: center;
+}
+
+.fileUpload {
+  text-align: center;
+}
+
+.buttonUpload {
+  background-color: #00c322;
+  border: none;
+  color: white;
+  padding: 7px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.buttonDownLoad{
+  background-color: #00c322;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}

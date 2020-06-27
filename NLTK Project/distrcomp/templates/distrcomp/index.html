@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>NLTK</h1>
+      <p>Comparison of Text Preprocessing using NLTK with and without Spark</p>
+    </div>
+
+    <div class="content">
+      <h1>What is NLTK?</h1>
+      <p>The Natural Language Toolkit, or more commonly NLTK,
+        is a suite of libraries and programs for symbolic and
+        statistical natural language processing (NLP) for English
+         written in the Python programming language.</p>
+      <p>NLTK is intended to support research and teaching
+        in NLP or closely related areas, including empirical
+         linguistics, cognitive science, artificial
+         intelligence, information retrieval,
+         and machine learning.</p>
+      <h1>What is Spark?</h1>
+      <p>Apache Spark is an open-source, distributed processing system used for
+        big data workloads. It utilizes in-memory caching and optimized query execution
+        for fast queries against data of any size. Simply put, Spark is a fast and general
+        engine for large-scale data processing.</p>      
+    </div>
+    <div class="fileUpload">
+      <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input class="inputUpload" type="file" name="myfile" />
+        <button class="buttonUpload" type="submit">Upload</button>
+      </form>
+      <p>
+        File uploaded at:
+        <a href="{{ uploaded_file_url }}">{{ uploaded_file_url }}</a>
+      </p>
+      <p>
+        <form action="downLoad" method="get">
+          <button onclick="location.href='{% url 'script' %}'" class="buttonDownLoad" type="getFile">Download report</button>
+        </form>
+      </p>
+    </div>
+  </body>
+</html>
